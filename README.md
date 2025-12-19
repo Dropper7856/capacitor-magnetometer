@@ -16,7 +16,7 @@ npx cap sync
 * [`echo(...)`](#echo)
 * [`startMagnetometerUpdates(...)`](#startmagnetometerupdates)
 * [`stopMagnetometerUpdates()`](#stopmagnetometerupdates)
-* [`addListener('magnetometerData', ...)`](#addlistenermagnetometerdata)
+* [`addListener('magnetometerData', ...)`](#addlistenermagnetometerdata-)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -64,7 +64,7 @@ stopMagnetometerUpdates() => Promise<void>
 ### addListener('magnetometerData', ...)
 
 ```typescript
-addListener(eventName: 'magnetometerData', listenerFunc: (data: MagnetometerData) => void) => Promise<{ remove: () => void; }>
+addListener(eventName: 'magnetometerData', listenerFunc: (data: MagnetometerData) => void) => Promise<PluginListenerHandle>
 ```
 
 | Param              | Type                                                                             |
@@ -72,12 +72,19 @@ addListener(eventName: 'magnetometerData', listenerFunc: (data: MagnetometerData
 | **`eventName`**    | <code>'magnetometerData'</code>                                                  |
 | **`listenerFunc`** | <code>(data: <a href="#magnetometerdata">MagnetometerData</a>) =&gt; void</code> |
 
-**Returns:** <code>Promise&lt;{ remove: () =&gt; void; }&gt;</code>
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
 --------------------
 
 
 ### Interfaces
+
+
+#### PluginListenerHandle
+
+| Prop         | Type                                      |
+| ------------ | ----------------------------------------- |
+| **`remove`** | <code>() =&gt; Promise&lt;void&gt;</code> |
 
 
 #### MagnetometerData

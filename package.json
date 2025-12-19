@@ -13,14 +13,14 @@
     "ios/Plugin/",
     "CapacitorMagnetometer.podspec"
   ],
-  "author": "Hansila",
+  "author": "Hansila, upgraded by Donovan Beulze",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hansszz/capacitor-magnetometer.git.git"
+    "url": "git+https://github.com/Dropper7856/capacitor-magnetometer.git"
   },
   "bugs": {
-    "url": "https://github.com/hansszz/capacitor-magnetometer.git/issues"
+    "url": "https://github.com/Dropper7856/capacitor-magnetometer.git/issues"
   },
   "keywords": [
     "capacitor",
@@ -44,10 +44,10 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^5.0.0",
-    "@capacitor/core": "^5.0.0",
-    "@capacitor/docgen": "^0.0.18",
-    "@capacitor/ios": "^5.0.0",
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/docgen": "^0.3.1",
+    "@capacitor/ios": "^8.0.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
     "@ionic/swiftlint-config": "^1.1.2",
@@ -57,10 +57,10 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.32.0",
     "swiftlint": "^1.0.1",
-    "typescript": "~4.1.5"
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@capacitor/core": "^5.0.0"
+    "@capacitor/core": "^8.0.0"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",

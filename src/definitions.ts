@@ -1,3 +1,5 @@
+import type { PluginListenerHandle } from '@capacitor/core';
+
 export interface MagnetometerPlugin {
   echo(options: { value: string }): Promise<{ value: string }>;
   startMagnetometerUpdates(options: { frequency: number }): Promise<void>;
@@ -5,7 +7,7 @@ export interface MagnetometerPlugin {
   addListener(
       eventName: 'magnetometerData',
       listenerFunc: (data: MagnetometerData) => void
-  ): Promise<{ remove: () => void }>;
+  ): Promise<PluginListenerHandle>;
 }
 
 export interface MagnetometerData {
